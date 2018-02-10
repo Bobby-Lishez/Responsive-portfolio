@@ -1,0 +1,278 @@
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../images/spiration_dark.png);
+}
+.header {
+    position: relative;
+    background: white;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.headerText {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    z-index: 10;
+}
+.headerTextLink {
+    color: gray;
+}
+.headerInset {
+    background: gold;
+    color:black;
+    padding: 10px;
+    margin-left: 20%;
+    width: 150px;
+}
+.contentArea {
+    clear : both;
+    position: relative;    
+    width: 960px;
+    margin: 0 auto;
+}
+.mainSection {
+    position: absolute;
+    left: 0px;
+    background: white;
+    width: 606px;
+    padding: 20px;
+    border-style: solid;
+    border-color: gold;
+    border-width: 2px;
+}
+.sidebar {
+    position: absolute;
+    right: 0px;
+    background: white;
+    width: 226px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 40px;
+    border-style: solid;
+    border-color: gold;
+    border-width: 2px;
+}
+.footer {
+    padding: 20px;
+    background: #666666;
+    border-style: solid;
+    border-color: gold;
+    border-top-width: 3px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+#mePic {
+    float: left;
+    padding: 10px;
+}
+#messageForm {
+    width: 100%;
+}
+#boxContainer{
+    position: relative;
+    margin-left: 50px;
+    height: 867px;
+    width: 506px;
+}
+#box1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 213px;
+    width: 213px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#box2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 213px;
+    width: 213px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#box3 {
+    position: absolute;
+    top: 289px;
+    left: 0px;
+    height: 213px;
+    width: 213px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#box4 {
+    position: absolute;
+    top: 289px;
+    right: 0px;
+    height: 213px;
+    width: 213px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#box5 {
+    position: absolute;
+    top: 578px;
+    left: 0px;
+    height: 213px;
+    width: 213px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+.boxLabel {
+    position: absolute;
+    bottom: 5px;
+    width: 213px;
+    text-align: center;
+    color: gold;
+    background: black;
+    z-index: 2;
+}
+@media screen and (max-width:980px){
+    .contentArea {
+        width:748px;
+    }
+    .mainSection {
+        width:478px;
+    }
+    .sidebar {
+        width:162px;
+    }
+    #getName{
+        width: 100%;
+    }
+    #getEmail {
+        width: 100%;
+    }
+    #getMessage {
+        width: 100%;
+    }
+    #boxContainer {
+        height: 100%;
+    }
+    #box1, #box2, #box3, #box4, #box5 {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contentArea {
+        width:620px;
+    }
+    .mainSection {
+        width: 606px;
+        position: static;
+    }
+    .sidebar {
+        width: 606px;
+        position: static;
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 75px;
+    }
+    #boxContainer{
+        position: relative;
+        margin-left: 50px;
+        height: 867px;
+        width: 506px;
+    }
+    #box1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 213px;
+        width: 213px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+    #box2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 213px;
+        width: 213px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+    #box3 {
+        position: absolute;
+        top: 289px;
+        left: 0px;
+        height: 213px;
+        width: 213px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+    #box4 {
+        position: absolute;
+        top: 289px;
+        right: 0px;
+        height: 213px;
+        width: 213px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+    #box5 {
+        position: absolute;
+        top: 578px;
+        left: 0px;
+        height: 213px;
+        width: 213px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .contentArea {
+        width: 100%;
+    }
+    .mainSection {
+        width:478px;
+    }
+    .sidebar {
+        width: 478px;
+    }
+    .headerInset {
+        position: static;
+        width: 96.5%;
+        margin-left:0;
+        text-align: center;
+    }
+    .headerText {
+        position: static;
+        padding: 10px;
+        text-align: center;
+    }
+    #boxContainer {
+        height: 100%;
+    }
+    #box1, #box2, #box3, #box4, #box5 {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+}

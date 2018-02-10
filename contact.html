@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>Bob Peters Portfolio</title>
+    </head>
+    <body>
+        <header class = "header">
+            <div class = "headerInset">
+                <h3>Bob Peters</h3>
+            </div>
+            <div class = "headerText">
+                <h3><a class = "headerTextLink" href = "index.html">About</a> <a class = "headerTextLink" href = "portfolio.html">Portfolio</a> Contact</h3>
+            </div>
+        </header>
+        <div class = "contentArea">
+                <section class = "mainSection">
+                    <h1>Contact</h1><hr>
+                    <form id = "messageForm" action="contact.php" method="post">
+                        Name<br>
+                        <input id = "getName" :required size="81"  type="text" name='name' placeholder = "e.g. John Smith"><br>
+                        Email<br>
+                        <input id = "getEmail" :required size="81" type="email" name='email' placeholder = "email@example.com"><br>
+                        Message<br>
+                        <textarea id = "getMessage" name='message' cols="83" rows="10" ></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form> 
+                </section>            
+                <section class = "sidebar">
+                    <h2>Connect with me</h2><hr>
+                    <a href = "https://www.linkedin.com/in/bob-peters-015785157/" target= "_blank">
+                    <img height = 50px width = 50px src = "assets/images/linkedin.png" alt = "linkedin">
+                    </a>&ensp;
+                    <a href = "https://github.com/Bobby-Lishez" target= "_blank">
+                    <img  height = 50px width = 50px src = "assets/images/github.png" alt = "github">
+                    </a>&ensp;
+                    <a href = "https://stackoverflow.com/users/story/9243291#" target= "_blank">
+                    <img height = 50px width = 50px src = "assets/images/stack_overflow.png" alt = "stackOverflow">
+                    </a>
+                </section>
+            </div>
+      <footer class = "footer">
+        Copyright © 2018 Bob Peters
+      </footer>
+    </body>
+</html>
